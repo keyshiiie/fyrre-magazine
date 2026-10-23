@@ -5,39 +5,33 @@ import PodcastCard from '@/components/ui/PodcastCard';
 
 export default function PodcastSection() {
   return (
-    <section className="w-full py-16">
-      <div className="max-w-380 mx-auto border-t pt-12 border-black">
+    <section className="w-full py-12 md:py-16">
+      {/* Внешний контейнер: max-w + паддинги */}
+      <div className="w-full max-w-site mx-auto px-4 sm:px-6 md:px-8">
         
-        {/* Заголовок секции */}
-        <div className="flex justify-between items-center mb-10">
-          <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tight">
-            Podcast
-          </h2>
-          <Link 
-            href="/podcasts" 
-            className="hidden sm:flex items-center gap-2 text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity"
-          >
-            All Episodes <ArrowRight size={16} />
-          </Link>
-        </div>
+        {/* Внутренний контейнер: граница и верхний паддинг. Без px! */}
+        <div className="w-full border-t border-black pt-8 md:pt-12">
+          
+          <div className="flex justify-between items-center mb-8 md:mb-10">
+            <h2 className="text-4xl md:text-5xl lg:text-7xl font-black uppercase tracking-tight">Podcast</h2>
+            <Link href="/podcasts" className="hidden sm:flex items-center gap-2 text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity">
+              All Episodes <ArrowRight size={16} />
+            </Link>
+          </div>
 
-        {/* Сетка карточек */}
-        <div className="flex flex-wrap">
-          {mockPodcasts.map((podcast) => (
-            <PodcastCard key={podcast.id} podcast={podcast} />
-          ))}
-        </div>
+          <div className="flex flex-wrap">
+            {mockPodcasts.map((podcast) => (
+              <PodcastCard key={podcast.id} podcast={podcast} />
+            ))}
+          </div>
 
-        {/* Ссылка для мобильных (если скрыта в шапке) */}
-        <div className="mt-8 sm:hidden">
-          <Link 
-            href="/podcasts" 
-            className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity"
-          >
-            All Episodes <ArrowRight size={16} />
-          </Link>
-        </div>
+          <div className="mt-8 sm:hidden">
+            <Link href="/podcasts" className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity">
+              All Episodes <ArrowRight size={16} />
+            </Link>
+          </div>
 
+        </div>
       </div>
     </section>
   );
