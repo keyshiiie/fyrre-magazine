@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Hero from '@/components/sections/Hero';
 import RecentPosts from '@/components/sections/RecentPosts';
+import PodcastSection from '@/components/sections/PodcastSection';
+import AuthorsSection from '@/components/sections/AuthorsSection';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +25,8 @@ export default function RootLayout({
         <Header />
         <Hero />
         <RecentPosts />
+        <PodcastSection />
+        <AuthorsSection />
       </body>
     </html>
   );
