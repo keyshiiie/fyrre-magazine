@@ -42,7 +42,7 @@ export default function Hero({ post }: { post: Post }) {
               <span>Duration: {post.readTime}</span>
               
               {/* Категория в бейдже */}
-              <span className="sm:ml-auto border border-gray-400 rounded-full px-4 py-1.5 uppercase tracking-wider">
+              <span className="sm:ml-auto border border-black rounded-full px-4 py-1.5 uppercase tracking-wider">
                 {post.category}
               </span>
             </div>

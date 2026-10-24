@@ -5,11 +5,11 @@ import { Post } from '@/lib/mock-data/types';
 export default function ArticleCard({ post }: { post: Post }) {
   return (
     <article className="flex flex-col sm:flex-row gap-6 py-8 border-b border-black last:border-0 group first:pt-0">
-      {/* На мобильных картинка w-full, на sm - фикс */}
       <div className="relative w-full sm:w-55 h-64 sm:h-55 shrink-0 overflow-hidden">
         <Image 
           src={post.coverImage} 
           alt={post.title} 
+          sizes="(max-width: 640px) 100vw, 220px"
           fill 
           className="object-cover group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
         />

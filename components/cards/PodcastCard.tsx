@@ -13,6 +13,7 @@ export default function PodcastCard({ podcast }: { podcast: Podcast }) {
         <Image 
           src={podcast.coverImage} 
           alt={podcast.title} 
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           fill 
           className="object-cover group-hover:scale-105 transition-transform duration-500"
         />

@@ -1,5 +1,5 @@
 import { mockPosts } from '@/lib/mock-data/posts';
-import ArticleCard from '@/components/ui/ArticleCard';
+import ArticleCard from '@/components/cards/ArticleCard';
 import Sidebar from './Sidebar';
 
 export default function RecentPosts() {

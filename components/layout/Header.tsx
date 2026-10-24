@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { InstagramIcon, SpotifyIcon, TwitterIcon, YoutubeIcon } from '@/components/ui/SocialIcons';
+import { InstagramIcon, SpotifyIcon, TwitterIcon, YoutubeIcon } from '@/components/cards/SocialIcons';
 
 export default function Header() {
   return (
@@ -13,7 +13,7 @@ export default function Header() {
 
           <div className="flex items-center md:items-end gap-4 md:gap-8">
             <nav className="hidden md:flex items-center gap-6 text-sm font-normal text-black">
-              <Link href="/magazine" className="hover:text-black transition-colors">Magazine</Link>
+              <Link href="/posts" className="hover:text-black transition-opacity">Magazine</Link>
               <Link href="/authors" className="hover:text-black transition-colors">Authors</Link>
               <Link href="/podcast" className="hover:text-black transition-colors">Podcast</Link>
             </nav>

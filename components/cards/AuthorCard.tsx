@@ -12,6 +12,7 @@ export default function AuthorCard({ author }: { author: Author }) {
         <Image 
           src={author.avatar} 
           alt={author.name} 
+          sizes="(max-width: 768px) 64px, (max-width: 1024px) 96px, 112px"
           fill 
           className="object-cover"
         />

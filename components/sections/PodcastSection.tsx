@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { mockPodcasts } from '@/lib/mock-data/podcasts';
-import PodcastCard from '@/components/ui/PodcastCard';
+import PodcastCard from '@/components/cards/PodcastCard';
 
 export default function PodcastSection() {
   return (

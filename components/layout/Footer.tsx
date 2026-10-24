@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { InstagramIcon, TwitterIcon, YoutubeIcon, SpotifyIcon } from '@/components/ui/SocialIcons'; // Твои иконки
+import { InstagramIcon, TwitterIcon, YoutubeIcon, SpotifyIcon } from '@/components/cards/SocialIcons'; // Твои иконки
 
 export default function Footer() {
   return (

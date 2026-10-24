@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { mockAuthors } from '@/lib/mock-data/authors';
-import AuthorCard from '@/components/ui/AuthorCard';
+import AuthorCard from '@/components/cards/AuthorCard';
 
 export default function AuthorsSection() {
   return (
